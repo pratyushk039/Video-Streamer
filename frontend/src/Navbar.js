@@ -20,7 +20,7 @@ class Navbar extends React.Component{
     render(){
         return(
             <Box>
-                <AppBar position="static" sx={{background: 'linear-gradient(to right, black,#170329,black)',opacity:1}} >
+                <AppBar position="static" sx={{background: 'linear-gradient(to right, black,#410757,black)',opacity:1}} >
                     <ToolBar sx={{ display: 'flex', justifyContent: 'space-between' , color:"white"}}>
                     <IconButton sx={{margin:1,color:"white"}}>
                         <MenuIcon />

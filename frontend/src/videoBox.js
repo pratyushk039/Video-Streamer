@@ -5,6 +5,8 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
+
+import { setState } from "react";
 // import Alert from '@mui/material/Alert';
 // import Stack from '@mui/material/Stack';
 
@@ -13,9 +15,17 @@ import CardMedia from '@mui/material/CardMedia';
 class Vidbox extends React.Component{
     constructor(){
         super();
-        this.state = {};
+        this.state = {
+            likes : 0,
+        };
     }
-     componentDidMount(){
+
+    incrementLikes = ()=>{
+        this.setState({likes:this.state.likes+1});
+    };
+
+
+    componentDidMount(){
         return;
      }
     // componentDidUpdate(){}
@@ -38,7 +48,7 @@ class Vidbox extends React.Component{
                     </CardContent>
                     <CardActions>
                         <Button sx={{margin:1}} variant="contained">Share</Button>
-                        <Button sx={{margin:1}} variant="contained">Like</Button>
+                        <Button sx={{margin:1}} variant="contained" onClick={this.incrementLikes}>Like : {this.state.likes}</Button>
                     </CardActions>
                 </Card>
             </Box>
