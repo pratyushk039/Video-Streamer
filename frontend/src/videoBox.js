@@ -29,7 +29,7 @@ class Vidbox extends React.Component{
                 component="iframe"
                 width="100%"
                 height="80%"
-                src="https://www.youtube.com/embed/PGqyvq9l0Mo?si=bhyppKcwDflrwNZe"
+                src="127.0.0.1:8000/video"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 />

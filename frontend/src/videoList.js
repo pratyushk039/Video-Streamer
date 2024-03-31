@@ -16,7 +16,7 @@ class VidList extends React.Component{
     render(){
         return(
             <Box>
-                <Card sx={{border:"2px solid white",position:"absolute",width:"25%",marginLeft : "1100px",marginTop:2,background: 'linear-gradient(yellow,pink,yellow,pink,yellow)', opacity:1,height:"200%"}}>
+                <Card sx={{border:"2px solid white",position:"absolute",width:"25%",marginLeft : "1100px",marginTop:2,background: 'linear-gradient(black,purple,black)', opacity:1,height:"200%"}}>
                 </Card>
             </Box>
         )
